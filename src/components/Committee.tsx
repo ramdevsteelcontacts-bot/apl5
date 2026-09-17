@@ -10,7 +10,10 @@ export function Committee() {
   const t = translations[lang].committee;
 
   return (
-    <section id="committee" className="relative py-24 px-4 sm:px-6 lg:px-8 bg-apl-bg-warm">
+    <section
+      id="committee"
+      className="relative py-24 px-4 sm:px-6 lg:px-8 bg-apl-bg-warm"
+    >
       <div className="max-w-7xl mx-auto">
         <SectionHeading
           en={t.heading}
@@ -27,7 +30,10 @@ export function Committee() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-20px' }}
-              transition={{ duration: 0.4, delay: Math.min(i * 0.05, 0.5) }}
+              transition={{
+                duration: 0.4,
+                delay: Math.min(i * 0.05, 0.5),
+              }}
               whileHover={{ y: -6 }}
               className="group relative card-bright card-bright-hover rounded-2xl p-6 overflow-hidden"
             >
@@ -39,7 +45,13 @@ export function Committee() {
                   {member.photo ? (
                     <img
                       src={member.photo}
-                      alt={lang === 'en' ? member.name : member.nameHi}
+                      alt={
+                        lang === 'en'
+                          ? member.name
+                          : member.nameHi
+                      }
+                      loading={i < 4 ? 'eager' : 'lazy'}
+                      decoding="async"
                       className="w-32 h-32 rounded-full object-cover border-2 border-apl-saffron/30 group-hover:border-apl-saffron transition-colors"
                     />
                   ) : (
@@ -47,20 +59,40 @@ export function Committee() {
                       <User className="w-14 h-14 text-apl-saffron/60" />
                     </div>
                   )}
+
                   <div className="absolute inset-0 rounded-full bg-apl-saffron/10 blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
-                <h3 className={`font-display font-700 text-lg text-apl-ink mb-1 ${lang === 'hi' ? 'font-hindi' : ''}`}>
+                <h3
+                  className={`font-display font-700 text-lg text-apl-ink mb-1 ${
+                    lang === 'hi' ? 'font-hindi' : ''
+                  }`}
+                >
                   {lang === 'en' ? member.name : member.nameHi}
                 </h3>
+
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-apl-surface-3 mb-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-apl-saffron" />
-                  <span className={`text-apl-saffron-dark text-xs font-600 ${lang === 'hi' ? 'font-hindi' : ''}`}>
-                    {lang === 'en' ? member.responsibility : member.responsibilityHi}
+
+                  <span
+                    className={`text-apl-saffron-dark text-xs font-600 ${
+                      lang === 'hi' ? 'font-hindi' : ''
+                    }`}
+                  >
+                    {lang === 'en'
+                      ? member.responsibility
+                      : member.responsibilityHi}
                   </span>
                 </div>
-                <p className={`text-apl-muted text-sm leading-relaxed ${lang === 'hi' ? 'font-hindi' : ''}`}>
-                  {lang === 'en' ? member.description : member.descriptionHi}
+
+                <p
+                  className={`text-apl-muted text-sm leading-relaxed ${
+                    lang === 'hi' ? 'font-hindi' : ''
+                  }`}
+                >
+                  {lang === 'en'
+                    ? member.description
+                    : member.descriptionHi}
                 </p>
               </div>
             </motion.div>
