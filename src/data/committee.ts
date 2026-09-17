@@ -271,7 +271,7 @@ export const committeeMembers: CommitteeMember[] = [
   {
     id: 'm20',
     name: 'Naresh Chaudhary, Dabhal',
-    nameHi: 'श्री नरेश चौधरी, डाभल',
+    nameHi: 'श्री नरेश चौधरी, डभाल',
     responsibility: 'Match-Day Operations',
     responsibilityHi: 'मैच-दिवस संचालन',
     description:
@@ -283,7 +283,7 @@ export const committeeMembers: CommitteeMember[] = [
 
   {
     id: 'm21',
-    name: 'Sengharam (Surendra) Chaudhary, Golasan',
+    name: 'Sendha Ram (Surendra) Chaudhary, Golasan',
     nameHi: 'श्री सेंघाराम (सुरेंद्र) चौधरी, गोलासन',
     responsibility: 'Online Team Registration',
     responsibilityHi: 'ऑनलाइन टीम पंजीकरण',
@@ -323,7 +323,7 @@ export const committeeMembers: CommitteeMember[] = [
   {
     id: 'm24',
     name: 'Devraj Chaudhary, Dabhal',
-    nameHi: 'श्री देवराज चौधरी, डाभल',
+    nameHi: 'श्री देवराज चौधरी, डभाल',
     responsibility: 'Medical & First Aid',
     responsibilityHi: 'चिकित्सा एवं प्राथमिक उपचार',
     description:
@@ -336,7 +336,7 @@ export const committeeMembers: CommitteeMember[] = [
   {
     id: 'm25',
     name: 'Karsan Chaudhary, Dabhal',
-    nameHi: 'श्री करसन चौधरी, डाभल',
+    nameHi: 'श्री करसन चौधरी, डभाल',
     responsibility: 'Scoring & Records Management Head',
     responsibilityHi: 'स्कोरिंग एवं रिकॉर्ड प्रबंधन प्रमुख',
     description:
@@ -362,7 +362,7 @@ export const committeeMembers: CommitteeMember[] = [
   {
     id: 'm27',
     name: 'Narendra Chaudhary, Pathmeda',
-    nameHi: 'श्री नरेंद्र चौधरी, पाथमेड़ा',
+    nameHi: 'श्री नरेंद्र चौधरी, पथमेड़ा',
     responsibility: 'Ground & Pitch Management',
     responsibilityHi: 'ग्राउंड एवं पिच व्यवस्था',
     description:
