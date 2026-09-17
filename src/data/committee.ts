@@ -275,9 +275,9 @@ export const committeeMembers: CommitteeMember[] = [
     responsibility: 'Match-Day Operations',
     responsibilityHi: 'मैच-दिवस संचालन',
     description:
-      'Coordinates various operational activities during match days.',
+      'Responsible for monitoring necessary arrangements during matches, coordination between teams and organizing team and systematic and timely conduct of each match as per the scheduled programme.',
     descriptionHi:
-      'मैच के दिनों में विभिन्न संचालन संबंधी गतिविधियों का समन्वय एवं व्यवस्था।',
+      'मैचों के दौरान आवश्यक व्यवस्थाओं की निगरानी, टीमों एवं आयोजन दल के बीच समन्वय तथा प्रत्येक मैच के निर्धारित कार्यक्रम के अनुसार व्यवस्थित एवं समयबद्ध संचालन की जिम्मेदारी।',
     photo: `/images/members/m20.jpg`,
   },
 
