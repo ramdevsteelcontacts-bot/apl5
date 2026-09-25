@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FFFBF5;
+    color: #1A1A2E;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: rgba(255, 122, 0, 0.25);
+    color: #1A1A2E;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 237, 213, 0.8);
+  }
+
+  .glass-orange {
+    background: rgba(255, 247, 237, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 200, 120, 0.4);
+  }
+
+  .glass-dark {
+    background: rgba(27, 40, 56, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 122, 0, 0.15);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 30px rgba(255, 122, 0, 0.3);
+  }
+
+  .text-glow-white {
+    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
+  }
+
+  .gradient-saffron {
+    background: linear-gradient(135deg, #FF7A00 0%, #E65100 100%);
+  }
+
+  .gradient-saffron-bright {
+    background: linear-gradient(135deg, #FF9933 0%, #FF7A00 50%, #E65100 100%);
+  }
+
+  .gradient-gold {
+    background: linear-gradient(135deg, #FFB300 0%, #FF7A00 100%);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #FF7A00 0%, #E65100 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-gold {
+    background: linear-gradient(135deg, #F59E0B 0%, #FF7A00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-text-white-gold {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFCA28 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-orange {
+    box-shadow: 0 4px 24px rgba(255, 122, 0, 0.3);
+  }
+
+  .glow-orange-strong {
+    box-shadow: 0 6px 40px rgba(255, 122, 0, 0.45), 0 2px 12px rgba(230, 81, 0, 0.2);
+  }
+
+  .glow-gold {
+    box-shadow: 0 4px 24px rgba(255, 179, 0, 0.25);
+  }
+
+  .card-bright {
+    background: #FFFFFF;
+    border: 1px solid #F0E4D3;
+    box-shadow: 0 2px 12px rgba(255, 200, 120, 0.12);
+  }
+
+  .card-bright-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-bright-hover:hover {
+    border-color: rgba(255, 122, 0, 0.35);
+    box-shadow: 0 8px 30px rgba(255, 122, 0, 0.15);
+  }
+
+  .stadium-grid {
+    background-image:
+      linear-gradient(rgba(255, 122, 0, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 122, 0, 0.04) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .stadium-grid-light {
+    background-image:
+      linear-gradient(rgba(255, 122, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 122, 0, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF7ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF7A00, #E65100);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FFB300, #FF7A00);
+}
