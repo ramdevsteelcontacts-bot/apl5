@@ -12,9 +12,9 @@ const sponsorPosters = [
   '/sponsors/sponsor-02.webp',
   '/sponsors/sponsor-03.webp',
   '/sponsors/sponsor-04.webp',
-  '/sponsors/sponsor-05.webp',
-  '/sponsors/sponsor-06.webp',
 ];
+
+const PER_GROUP = 2;
 
 export function Sponsors() {
   const { lang } = useLanguage();
@@ -25,13 +25,13 @@ export function Sponsors() {
   const [largeIndex, setLargeIndex] = useState(0);
 
   const groups = [
-    sponsorPosters.slice(0, 3),
-    sponsorPosters.slice(3, 6),
+    sponsorPosters.slice(0, PER_GROUP),
+    sponsorPosters.slice(PER_GROUP, PER_GROUP * 2),
   ];
 
   const currentGroup = groups[group];
 
-  // Desktop: 3 posters -> next 3 posters
+  // Desktop: 2 posters -> next 2 posters
   const nextGroup = () => {
     setGroup((prev) => (prev + 1) % groups.length);
   };
@@ -142,15 +142,16 @@ export function Sponsors() {
 
           {/* =========================
               DESKTOP / TABLET
-              3 POSTERS TOGETHER
+              2 POSTERS TOGETHER
              ========================= */}
           <div className="hidden sm:block">
 
-            <div className="relative">
+            {/* width = 2/3 so each poster keeps the same size as before */}
+            <div className="relative mx-auto w-2/3">
 
-              <div className="grid grid-cols-3 gap-3 lg:gap-4">
+              <div className="grid grid-cols-2 gap-3 lg:gap-4">
                 {currentGroup.map((poster, index) => {
-                  const realIndex = group * 3 + index;
+                  const realIndex = group * PER_GROUP + index;
 
                   return (
                     <div
