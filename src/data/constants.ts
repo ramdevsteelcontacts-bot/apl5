@@ -1,4 +1,4 @@
-export const REGISTRATION_URL = 'https://aplsanchore.in/';
+export const REGISTRATION_URL = 'https://apl.aanjanaraktmitra.org/register';
 
 export const CONTACT = {
   PHONE_NUMBER: '+91XXXXXXXXXX',
